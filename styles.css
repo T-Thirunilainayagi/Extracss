@@ -1,0 +1,56 @@
+div.child{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+}
+
+div.child:hover{
+    background-color: blueviolet;
+}
+input:focus{
+    background-color: crimson !important;
+    /* important overrides any style default defined */
+}
+div::selection{
+    background-color: darkgreen;
+    color:darkmagenta;
+    /* font size cant be changed  in selection*/
+
+}
+/* li{
+    list-style: none;
+    font-size: 4rem;
+    position: relative;
+    width:200px;
+    display:flex;
+
+}
+li::after{
+    
+    width:20px;
+    height: 20px;
+    background-color:maroon ;
+    position:absolute;
+    border-radius: 50%;
+    right:10px;
+    top:30px;
+
+} */
+li {
+    list-style: none;
+    font-size: 4rem;
+    position: relative;
+    width: 200px;
+    display: inline-block;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    right: 10px;
+    top: 30px;
+}
