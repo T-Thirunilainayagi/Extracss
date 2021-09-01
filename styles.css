@@ -30,6 +30,7 @@ div.container:hover div.ball{
     animation-fill-mode: forwards;
     animation-iteration-count:2 ;
     animation-delay: 1s;
+    /* animation:stylish-rotate 2s ease infinite; shorthand for animation */
     /* animation-iteration-count:infinite; never stops */
     /* transform:rotatez(60deg); */
     /* transform:scale(2); */
