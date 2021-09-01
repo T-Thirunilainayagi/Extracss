@@ -9,7 +9,7 @@ div.child:hover{
 }
 input:focus{
     background-color: crimson !important;
-    /* important overrides any style default defined */
+    /* important overrides any style used when 2 styles conflict */
 }
 div::selection{
     background-color: darkgreen;
@@ -17,26 +17,31 @@ div::selection{
     /* font size cant be changed  in selection*/
 
 }
-/* li{
+li{
     list-style: none;
-    font-size: 4rem;
+    margin:20px;
+    font-size:4rem;
     position: relative;
     width:200px;
-    display:flex;
+    background-color: mediumvioletred;
+    display:inline-block;
+    
 
 }
 li::after{
-    
+    content:'';
     width:20px;
     height: 20px;
     background-color:maroon ;
+    
     position:absolute;
     border-radius: 50%;
     right:10px;
     top:30px;
 
-} */
-li {
+}
+
+/* li {
     list-style: none;
     font-size: 4rem;
     position: relative;
@@ -53,4 +58,4 @@ li::after {
     background-color: blueviolet;
     right: 10px;
     top: 30px;
-}
+} */
